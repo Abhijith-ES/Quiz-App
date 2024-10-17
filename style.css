@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    border-color: #f4f4f9;
+}
+
+body{
+    color: #333;
+    background:linear-gradient(
+        135deg,
+        #8052ec,
+        #d161ff
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h2{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 850px;
+    max-width: 600px;
+    text-align: center;
+    margin-top: -123px;
+  }
+
+  
+  /* question styles   */
+
+#question{
+    font-size: 2.5rem;
+    font-family: Arial,  sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold ;
+
+}
+
+
+/* options styles  */
+.options-container{
+         list-style-type: none;
+        padding: 0;
+}
+
+.options-container>li {
+    background-color: #f3f3f3;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid transparent;
+    font-size: 1.5rem;
+
+  }
+
+  .options-container>li:hover{
+    background-color: #74ebd5;
+    color: #333;
+  }
+  .options-container>li:active {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+    transform: scale(1.1);  /* Slight zoom for emphasis */
+}
+      
+button{
+    /* display:block; */
+    margin: 4px 2px;
+    padding:15px 35px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    /* outline: none; */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Arial,  sans-serif;
+}
+button:hover{
+    background-color: #45a049;
+}
+
+
+
+/* next button styles  */
+.next{
+    background-color:#4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+.next:disabled{
+    background-color: #ccc;
+}
+
+
+
+
+/* result text styles  */
+.result{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    margin-top: -35px;
+    /* display: none;hidden intially will display using dom8 */
+}
+/* .result-hidden{
+    display: hidden;
+} */
+
+
+
+/* progress bar styles  */
+.progress-bar-container{
+    width: 85%;
+    background-color: #f3f3f3;
+    border-radius: 5px ;
+    margin-bottom: 20px ;
+    transition:width 2s ease-in;
+}
+.progress{
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    width: 0;
+
+}
+
+
+/* score styles  */
+.score {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #4CAF50;
+  }
+  
